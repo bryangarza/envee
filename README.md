@@ -83,3 +83,9 @@ all equivalent.
 -d magenta
 -d m
 </pre>
+
+
+Sample Output
+-------------
+
+![Screenshot](http://i.imgur.com/ksVA3.png)
