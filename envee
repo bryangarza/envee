@@ -181,36 +181,38 @@ gallery() {
 
 
 usage() {
-    echo 'usage: envee [option]'
-    echo ''
-    echo ' general options:'
-    echo '   -h, --help                  print this help message and exit'
-    echo '   -v, --version               print version info and exit'
-    echo ''
-    echo ' art options:'
-    echo '   -A, --Art=ARTOPT            change the ASCII art'
-    echo '   --gallery                   display all possible ASCII art choices'
-    echo ''
-    echo ' color options:'
-    echo '   -a, --art-color=COLOR       change the art color'
-    echo '   -l, --label-color=COLOR     change the label color'
-    echo '   -d, --data-color=COLOR      change the data color'
-    echo ''
-    echo ' color choices:'
-    echo '   red, green, yellow, blue, magenta, cyan, white'
-    echo '   r,g,y,b,m,c,w'
-    echo ''
-    echo ' variable options:'
-    echo '   -s, --set VAR=VALUE         define new or existing variable'
-    echo ''
-    echo ' variable choices:'
-    echo '   host, shell, editor, kernel, cpu, explicit, foreign, term, other'
-    echo ''
-    echo ' examples:'
-    echo '   envee -a white -l blue -d white -s WM=dwm'
-    echo '   envee --art-color=magenta --set shell=zsh'
-    echo '   envee --set host=modula-1 --set editor=vim'
-    echo '   envee --Art=poison --art-color=green --label-color=white --data-color=red'
+    cat <<EOF
+usage: envee [option]
+
+  general options:
+     -h, --help                  print this help message and exit
+     -v, --version               print version info and exit
+ 
+  art options:
+    -A, --Art=ARTOPT            change the ASCII art
+    --gallery                   display all possible ASCII art choices
+
+  color options:
+    -a, --art-color=COLOR       change the art color
+    -l, --label-color=COLOR     change the label color
+    -d, --data-color=COLOR      change the data color
+
+  color choices:
+    red, green, yellow, blue, magenta, cyan, white
+    r,g,y,b,m,c,w
+
+  variable options:
+    -s, --set VAR=VALUE         define new or existing variable
+
+  variable choices:
+     host, shell, editor, kernel, cpu, explicit, foreign, term, other
+
+  examples:
+     envee -a white -l blue -d white -s WM=dwm
+     envee --art-color=magenta --set shell=zsh
+     envee --set host=modula-1 --set editor=vim
+     envee --Art=poison --art-color=green --label-color=white --data-color=red
+EOF
 }
 
 art_list=(isometric classic graffiti poison)
