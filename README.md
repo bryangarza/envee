@@ -7,6 +7,12 @@ envee is a light bash script inspired by
 can display 4 different Arch Linux ASCII logos, along with information about
 the system.
 
+Installation
+------------
+
+AUR: https://aur.archlinux.org/packages.php?ID=57919
+Or clone!
+
 Usage
 -----
 
